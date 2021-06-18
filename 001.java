@@ -268,40 +268,355 @@ public class Trikampis {
 }
 
 
-/* 
-1.
-ar metai buvo olympiniai/neolympiniai
-kelintas numeris tu metu
 
-> arba = 
+  public class pasirinkimas {
 
-2. h/m/s
-po sekundes bus val, m, s,
+	public static void main(String[] args) {
+		int i=1;
+		if(i == 3)
+			System.out.println("treciadienis");
+		if (i == 4)
+			System.out.println("ketvirtadienis");
+		switch (i) {
+		case 1: System.out.println("pirm");
+		case 2: System.out.println("antr");
+		case 3: System.out.println("trec");
+		}
+	}
 
-*/
+}
 
 
+
+public class sutrumpintasif {
+
+	public static void main(String[] args) {
+		int lytis=1;
+		
+	String lytisS;
+	/* if(lytis==0) {
+		lytisS="Moteris";
+	} else {
+		lytisS="Vyras";
+	} */
+	 lytisS=(lytis==0)?"Moteris":"Vyras";
+	 
+	 
+	 
+	 
+// System.out.println("Zmogaus lytis:+lytisS");
+	 System.out.println("Zmogaus lytis: "+((lytis==0)?"moteris":"vyras"));
+	}
+
+}
+
+
+
+/* */
+public class menesiai {
+
+	public static void main(String[] args) {
+		Scanner on = new Scanner (System.in);
+		System.out.println("Iveskite metus ir menesiai: ");
+		int metai=in.nextInt();
+		int menuo=in.nextInt();
+		int diena=in.nextInt();
+		
+		int dienu = 0;
+		
+		switch (menuo) {
+		case 12: 
+			dienu=dienu +30;
+		case 11: 
+			dienu = dienu+ 31;
+			break;
+		case 10:
+			dienu += 30;
+			break;
+		case 9:
+			dienu += 31;
+			break;
+		case 8:
+			dienu += 31;
+		case 7:
+			dienu += 30;
+		case 6:
+			dienu = 31;
+		case 5:
+			dienu += 31;
+		case 4:
+			dienu += 30;
+		case 3:
+			dienu += 28;
+		case 2:
+			dienu += 31;
+			
+		
+			
+		}
+		
+		if (menuo > 2) {
+			if(metai % 4== 0 && metai % 100 != 0 || metai % 400 == 0  )
+				dienu++;
+		}
+		
+		dienu=dienu + diena;
+		System.out.println("Dienu:" + dienu);
+
+	}
+
+}
+
+/*  tasks*/
+
+package pirma;
+import java.util.Scanner;
+public class pirmas {
+    public static void main(String[] args) {
+        Scanner ivedimas=new Scanner(System.in);
+
+        int svoris,ugis;
+        System.out.print("Iveskite svori (kilogramais):");
+        svoris = ivedimas.nextInt();
+
+        System.out.print("Iveskite ugi (centimetrais):");
+        ugis=ivedimas.nextInt();
+        double ugisMetrais = (double)ugis/100;
+        double kmi = svoris / (ugisMetrais*ugisMetrais);
+        System.out.println("Jusu kmi yra: (float)kmi");
+        ivedimas.close();
+
+    }
+}
+
+
+/* homework 1*//////////////////////////////////
+import java.util.Scanner;
+public class Trikampis {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Iveskite metus:");
+        int metai = in.nextInt();
+        If((metai >= 1896) &&(metai % 4 == 0)){
+            System.out.println("Metai olympiniai");
+            System.out.println("Olympiniu zaidymu numeris: " +(metai / 4-473));
+            int n = (metai % 1896) / 4+1;
+            System.out.println(n);
+        }else {
+            System.out.println("Metai neolimpiniai");
+        }
+        in.close();
+    }
+}
+
+/* laikrodis */
+import java.util.Scanner;
+public class Laikrodis {
+public static void main(String[] args) {
+Scanner in = new Scanner(System.in);
+System.out.print("Iveskite kiek laiko rodo laikrodis (h,m,s):");
+        int h=in.nextInt();
+		int m=in.nextInt();
+		int s=in.nextInt();
+        s++;
+        if (s==60){
+            m++;
+            s=0;
+            if (m==60){
+                h++;
+                m=0;
+                if (h == 24) {
+                    h = 0;
+                }
+            }
+        }
+        System.out.println("Povienos sekundes bus: "+h+":"+m+":"+s);
+}
+
+}
+
+
+/* metai */
+
+import java.util.Scanner;
+public class Metai {
+    public static void main(String[]args){
+        Scanner in = new Scanner(System.in);
+        System.out.println("Iveskite metus: ");
+        int metai = in.nextInt();
+        If (metai % 4 == 0 && metai % 100 !=0 || metai % 400==0){
+            System.out.println("Metai keliamieji");
+        } else {
+            System.out.println("Metai paprastieji");
+        }
+    }
+}
+
+
+/* 2 scanners*/
+public class Vykdymas {
+    public static void main(String[]args)throws FileNotFoundException {
+        Scanner inC=new Scanner(System.in);
+        System.out.print("Is kokio failo skaityti:");
+        int e=inC.nextInt();
+        System.out.println("Pa"+n*n);
+        in.close();
+        inC.close();
+    }
+}
+
+
+
+import java.io.*;
+import java.util.Scanner;
+public class Vykdymas {
+    public static void main(String[]args)throws FileNotFoundException {
+        Scanner inC=new Scanner(System.in);
+        System.out.print("Is kokio failo skaityti:");
+        int e=inC.nextInt();
+
+
+
+
+    Scanner in=new Scanner(new File(f));
+    int n=in.nextInt();
+    for (int i=1; i<=n; i++) {
+        int t=in.nextInt();
+        int suma=0;
+        suma=suma+t;
+        System.out.println(i+" d.Temperatura:"+t);
+    }
+
+        System.out.println("visu temperaturu suma");
+
+        in.close();
+        inC.close();
+    }
+}
+
+/* */
+
+
+import java.io*;
+import java.util.Scanner;
+public class Klasesvidurk {
+    public static void main(String[] args) throws FileNotFoundException {
+        Scanner inF - new Scanner(System.in);
+        System.out.println("Nurodykite faila:");
+        String f = inF.next();
+        Scanner in = new Scanner(new File(new File(f));
+        int n = in.nextInt();
+        for (int i=1; i<=n; i++) {
+            int v = in.nextInt();
+            vid = (vid +v);
+        }
+        vid= vid / n;
+        System.out.printf("%5.2f", vid);
+    }
+}
+
+import java.io.*;
+import java.util.Scanner;
+public class pazymiai {
+    public static void main(String[]args)throws FileNotFoundException {
+        Scanner inC=new Scanner(System.in);
+        System.out.print("Is kokio failo skaityti:");
+        int e=inC.nextInt();
+
+    Scanner in=new Scanner(new File(f));
+    int n=in.nextInt();
+    for (int i=1; i<=n; i++) {
+        int t=in.nextInt();
+        int suma=0;
+        suma=suma+t;
+        System.out.println(i+" pazymiai:"+t);
+    }
+        System.out.println("pazymiu suma");
+        in.close();
+        inC.close();
+    }
+}
+
+
+
+
+
+
+public class pirminiai {
+
+	public static void main(String[] args) {
+		int i=21;
+		boolean pirminis=true;
+		for (int y=2; y<i; y++) {
+			if (i % y == 0) {
+				pirminis=false;
+				break;
+		}
+
+	}
+		if (pirminis) {
+			System.out.println("Pirminis");
+			
+		} else {
+			System.out.println("Nepirminis");
+		}
+
+}
+}
+
+/*  svarbus variantas*/
+
+public class UzduotisN {
+    public static void main (String[] args) {
+        Scanner in = new Scanner (System.in);
+        int a, b, i, j, f;
+        System.out.printf("Iveskite intervalo pradzia:");
+        a = in.nextInt();
+        System.out.printf("Iveskite intervalo pabaiga:");
+        b = in.nextInt();
+        System.out.printf("Pirminiai skaiciai tarp %d ir %d yra:", a, b,);
+        for (i = a; i <= b; i++) {
+            if (i == 1 || i == 0)
+            continue;
+            f = 1;
+            for (j = 2; j <= i / 2; ++j) {
+                if (i % j == 0) {
+                    f = 0;
+                     break;
+                }
+            }
+            if (f == 1)
+            System.out.println(i);
+        }
+
+    }
+}
 
 
 import java.util.Scanner;
-public class Staciakampis {
+public class Vykdymas {
     public static void main(String[] args) {
-        Scanner in=new Scanner(System.in;)
-
-        String fromYear = "1896"
-        String toYear = "2021"
-
-        System.out.print("Iveskite staciakampio krastiniu ilgius:");
-        int a=in.nextInt();
-        int b=in.nextInt();
-        int c=in.nextInt();
-
-        if (a=b+c && c<a+b) {
-            System.out.println("Staciakampis");
-        } else{
-            System.out.println("Staciakampio sudaryti negalima");
+        Scanner in=new Scanner(System.in);
+        System.out.print("Iveskite kokia daugybos lentele norite gauti:");
+        int n=in.nextInt();
+        for (int i=1; i<20; i++){
+            System.out.println(n+" */t " +i+" \t= "+(n*i));
         }
     }
+}
 
-} 
-
+import java.util.Scanner;
+public class Vykdymas {
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            for (int y=0; y<10; y++) {
+                if (i==4 || i==5 || i==y || i==9-y) {
+               System.out.print(" "); 
+            }else {
+                System.out.print("*");
+            }
+        }
+        System.out.println();
+    }
+    in.close();
+}
