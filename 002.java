@@ -1,4 +1,6 @@
-/* package MyPackage;
+/* 21.06.2021
+
+package MyPackage;
 public class MyClass2 {
     public static void main(String[] args) {
         int i=0;
@@ -131,4 +133,80 @@ public class class6 {
     }
 }
 
-*/
+Scanner in = new Scanner(System.in);
+System.out.print("Įvekite dabartinį atlyginimą: ");
+int alga = in.nextInt();
+int dviguba=alga*2;
+System.out.print("Kiek Eurų alga bus padidinta kas mėnesį? ");
+int x = in.nextInt();
+int menuo = 0;
+do {
+alga = alga + x;
+menuo++;
+} while (dviguba > alga);
+System.out.println("Alga bus didesne negu dviguba po: " + menuo + " menesių");
+in.close();
+
+
+
+
+
+import java.util.Scanner;
+package MyPackage;
+
+public class class6 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Iveskite skaiciu: ");
+        int n = in.nextInt();
+        
+        int suma=0;
+        while (n!=0) {
+            suma=suma + n % 10;
+            n / = 10;
+        }
+
+        System.out.print("Skaitmenu suma: "+suma );
+
+    }
+}
+
+
+
+import java.util.Scanner;
+package MyPackage;
+
+public class class6 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Iveskite skaiciu: ");
+        int n = in.nextInt();
+        
+        int suma=0;
+        while (n!=0) {
+            suma=suma + n % 10;
+            n / = 10;
+        }
+
+        System.out.print("Skaitmenu suma: "+suma );
+
+    }
+}
+
+
+public static void main(String[]args) {
+    Scanner in=new Scanner(System.im);
+    System.out.print("Pirmas atl.:");
+    int alt=in.nextInt();
+    System.out.print("Kiek dides atl.:");
+    int padidejimas=in.nextInt();
+    int men=0;
+    int altE=atl;
+    while (atl<atl*2) {
+        men++;
+        atlE+=padidejimas;
+    }
+    System.out.println("Uzdarbis > nei 2 l/ po "+men+" men.")
+}
+
+last 3 for homework*/

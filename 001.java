@@ -1,5 +1,8 @@
-/* JAVA TRAINING  */
+/* JAVA TRAINING
+20.06.2021
 
+*/
+/*
 import java.util.Scanner;
 public class Vykdymas {
     public static void main(String[] args) {
@@ -23,7 +26,6 @@ public class Vykdymas {
     }
 }
 
-/* new java class */
 
 package laikrodis;
 import java.util.Scanner;
@@ -46,7 +48,7 @@ public class Laikrodis {
 
 }
 
-/*  
+
 uzd2  
 book per month (v)
 book per year (n)
@@ -58,7 +60,6 @@ m - year
 per 1 month 1 lank read book
 vm / n
 
-*/
 
 package knygos;
 import java.util.Scanner;
@@ -99,7 +100,7 @@ public class KvadratoPlotas {
     }
 }
 
-/* */
+
 package salyginis;
 import java.util.Scanner;
 public class Salyginis {
@@ -122,13 +123,7 @@ public class Salyginis {
 }
 
 
-/* class 
 
-n
-
-
-
-*/
 
 import java.util.Scanner;
 public class Test { 
@@ -148,7 +143,8 @@ public class Test {
 
 }
 
-/* */
+
+
  
 
 import java.util.Scanner;
@@ -187,7 +183,7 @@ public class Staciakampis {
 
 }
 
-/* Trikampis */
+// Trikampis 
 import java.util.Scanner;
 public class Trikampis {
     public static void main(String[] args) {
@@ -207,7 +203,7 @@ public class Trikampis {
 } 
 
 
-/* staciakampis */
+// staciakampis 
 import java.util.Scanner;
 
  
@@ -238,13 +234,13 @@ public class Trikampis {
 
 }
 
-/* homework
+// homework
 
 1 - penktadienis
 2 - sestadienis
 8 - penktadienis
 
-*/
+//
 
 import java.util.Scanner;
 public class Trikampis {
@@ -286,7 +282,9 @@ public class Trikampis {
 
 }
 
+*/
 
+/*
 
 public class sutrumpintasif {
 
@@ -299,10 +297,10 @@ public class sutrumpintasif {
 	} else {
 		lytisS="Vyras";
 	} */
-	 lytisS=(lytis==0)?"Moteris":"Vyras";
+//	 lytisS=(lytis==0)?"Moteris":"Vyras";
 	 
-	 
-	 
+
+	 /*
 	 
 // System.out.println("Zmogaus lytis:+lytisS");
 	 System.out.println("Zmogaus lytis: "+((lytis==0)?"moteris":"vyras"));
@@ -312,7 +310,6 @@ public class sutrumpintasif {
 
 
 
-/* */
 public class menesiai {
 
 	public static void main(String[] args) {
@@ -368,7 +365,7 @@ public class menesiai {
 }
 
 /*  tasks*/
-
+/*
 package pirma;
 import java.util.Scanner;
 public class pirmas {
@@ -390,7 +387,7 @@ public class pirmas {
 }
 
 
-/* homework 1*//////////////////////////////////
+// homework 1//////////////////////////////////
 import java.util.Scanner;
 public class Trikampis {
     public static void main(String[] args) {
@@ -409,7 +406,7 @@ public class Trikampis {
     }
 }
 
-/* laikrodis */
+// laikrodis 
 import java.util.Scanner;
 public class Laikrodis {
 public static void main(String[] args) {
@@ -436,7 +433,7 @@ System.out.print("Iveskite kiek laiko rodo laikrodis (h,m,s):");
 }
 
 
-/* metai */
+// metai 
 
 import java.util.Scanner;
 public class Metai {
@@ -453,7 +450,7 @@ public class Metai {
 }
 
 
-/* 2 scanners*/
+// 2 scanners
 public class Vykdymas {
     public static void main(String[]args)throws FileNotFoundException {
         Scanner inC=new Scanner(System.in);
@@ -494,8 +491,7 @@ public class Vykdymas {
     }
 }
 
-/* */
-
+/*
 
 import java.io*;
 import java.util.Scanner;
@@ -515,6 +511,8 @@ public class Klasesvidurk {
     }
 }
 
+*/
+/*
 import java.io.*;
 import java.util.Scanner;
 public class pazymiai {
@@ -538,8 +536,8 @@ public class pazymiai {
 }
 
 
-
-
+*/
+/*
 
 
 public class pirminiai {
@@ -563,9 +561,9 @@ public class pirminiai {
 
 }
 }
-
-/*  svarbus variantas*/
-
+*/
+//  svarbus variantas
+/*
 public class UzduotisN {
     public static void main (String[] args) {
         Scanner in = new Scanner (System.in);
@@ -592,7 +590,8 @@ public class UzduotisN {
     }
 }
 
-
+*/
+/*
 import java.util.Scanner;
 public class Vykdymas {
     public static void main(String[] args) {
@@ -600,23 +599,27 @@ public class Vykdymas {
         System.out.print("Iveskite kokia daugybos lentele norite gauti:");
         int n=in.nextInt();
         for (int i=1; i<20; i++){
-            System.out.println(n+" */t " +i+" \t= "+(n*i));
-        }
-    }
-}
+//           System.out.println(n+" */t " +i+" \t= "+(n*i));
+//        }
+//    }
+// }
 
-import java.util.Scanner;
-public class Vykdymas {
-    public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            for (int y=0; y<10; y++) {
-                if (i==4 || i==5 || i==y || i==9-y) {
-               System.out.print(" "); 
-            }else {
-                System.out.print("*");
-            }
-        }
-        System.out.println();
-    }
-    in.close();
-}
+
+/*
+// import java.util.Scanner;
+// public class Vykdymas {
+//    public static void main(String[] args) {
+//        for (int i = 0; i < 10; i++) {
+//            for (int y=0; y<10; y++) {
+///                if (i==4 || i==5 || i==y || i==9-y) {
+ //              System.out.print(" "); 
+//            }else {
+//                System.out.print("*");
+//            }
+//        }
+//        System.out.println();
+//    }
+//    in.close();
+// }
+//
+*/
