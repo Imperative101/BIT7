@@ -302,6 +302,67 @@ public class Uzd1 {
 }
 
 
+
+
+
+
+
+package pirma;
+
+import java.util.Scanner;
+
+public class Vykdymas {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int ilgis, plotis;
+        double kaina, suma;
+        System.out.print("Iveskite ilgi, ploti ir kaina: ");
+        ilgis=in.nextInt();
+        
+        //System.out.print("Iveskite ploti: ");
+        plotis=in.nextInt();
+        
+        //System.out.print("Iveskite kaina: ");
+        kaina=in.nextDouble();
+        
+        suma=ilgis*plotis*kaina;
+        System.out.println("Viso kainuos "+suma);
+        
+        in.close();
+        /*
+        Scanner in = new Scanner(System.in);
+        int x, y, ats;
+        
+        System.out.print("Iveskite x: ");
+        x=in.nextInt();
+        
+        System.out.print("Iveskite y: ");
+        y=in.nextInt();
+        
+        ats= x + y;
+    
+        System.out.print("Suma: "+ats);
+        
+        in.close();
+        */
+        
+        /*
+        Scanner in = new Scanner(System.in);
+        
+        System.out.print("Iveskite x: ");
+        int    x=in.nextInt();
+        
+        System.out.print("Iveskite y: ");
+        int    y=in.nextInt();
+        
+        int ats= x + y;
+    
+        System.out.print("Suma: "+ats);
+        
+
+
+
 ////////////////////// java functions 06.30.2021
 
 public class Vykdymas {
@@ -433,6 +494,265 @@ public class eurai {
         int p=plotas(a,b);
         system.out.perintln(plotas (2.5,2));
     }
+}
+
+
+
+
+
+public class eurai {
+    public static boolean pirminis (int x) {
+        boolean pirminis=true;
+        for (int i=2; i<x; i++) {
+            if (x%i ==0) {
+                return false;
+            }
+        }
+        return pirminis;
+    }
+    public static void main (string[] args) {
+        Scanner in=new Scanner (System.in);
+        int i=in.nextInt();
+        if (pirminis(i) ) {
+system.out.println("skaicius pirminis");
+        } else {
+system.out.println("skaicius nepirminis");
+        
+    }
+}
+
+
+
+
+
+
+
+
+public class masyvai {
+    public static int[] add(int[] m, int data) {
+        int[] t= new int[m.length+1];
+        for (int i=0; i<m.length; i++) {
+            t[i]=m[i];
+        }
+        t[t.length-1]=data;
+        return t;
+    }
+    public static int[] del(int[] m,int index) {
+            int[] t = new int [m.length-1];
+            return t;
+    }
+    public static void main (string[] args) {
+        int [] m = {3,7};
+        system.out,println (arrays.to string(m));
+    }
+}
+
+
+
+
+
+
+
+
+package pirma;
+
+import java.util.Scanner;
+
+public class Vykdymas {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int ilgis, plotis;
+        double kaina, suma;
+        System.out.print("Iveskite ilgi, ploti ir kaina: ");
+        ilgis=in.nextInt();
+        
+        //System.out.print("Iveskite ploti: ");
+        plotis=in.nextInt();
+        
+        //System.out.print("Iveskite kaina: ");
+        kaina=in.nextDouble();
+        
+        suma=ilgis*plotis*kaina;
+        System.out.println("Viso kainuos "+suma);
+        
+        in.close();
+        /*
+        Scanner in = new Scanner(System.in);
+        int x, y, ats;
+        
+        System.out.print("Iveskite x: ");
+        x=in.nextInt();
+        
+        System.out.print("Iveskite y: ");
+        y=in.nextInt();
+        
+        ats= x + y;
+    
+        System.out.print("Suma: "+ats);
+        
+        in.close();
+        */
+        
+        /*
+        Scanner in = new Scanner(System.in);
+        
+        System.out.print("Iveskite x: ");
+        int    x=in.nextInt();
+        
+        System.out.print("Iveskite y: ");
+        int    y=in.nextInt();
+        
+        int ats= x + y;
+    
+        System.out.print("Suma: "+ats);
+        
+    }
+
+}
+
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+public class magiskas_kvvadratas {
+    public static void main (String[] args) throws FilexNotFoundException { 
+        Scanner in=new Scanner(new File ("temp.txt"));
+        int n=in.nextInt();
+        int[][] mas=new int[n][n];
+        int eilute = 0; stulpelis = 0, istr1=0, istriz2=0, sk=0, sk1=0, sk2=0, sk3=0;
+        for (int i=0; i<n; i++) {
+            for(int i=0; i<n; i++) {
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+public class magiskas_kvvadratas {
+    public static void main (String[] args) throws FilexNotFoundException { 
+        Scanner in=new Scanner(new File ("temp.txt"));
+        int n=in.nextInt();
+        int[][] mas=new int[n][n];
+        int eilute = 0; stulpelis = 0, istr1=0, istriz2=0, sk=0, sk1=0, sk2=0, sk3=0; sk4=, sk5 = sk6 = 
+        for (int i=0; i<n; i++) {
+            for(int i=0; i<n; i++) {
+                for (int y=0; y<n; y++) {
+                    mas[i][y]=in.nextInt();
+                }
+            }
+
+            for (int i=0; i<n, i++) {
+                for (int y=0; y<n; y++) {
+                    sk = mas[i][y];
+                    eilute += sk;
+                    sk1 = mas [y][i];
+                    stulpelis +=sk;
+                    if (i==y) {
+                        sk2 = mas[i][y];
+                        istr += sk2;
+                    }
+                    if (i==(n-1)-y) {
+                        sk3 = mas[i][y];
+                        istrix2 += sk;
+                    }
+                }
+            }
+            if ((eilute/n == stulpelis/n) &&(eilute/n istriz1) && (istriz1== istriz2) ) {
+                System.out.println("Kvadratas yra magiskas");
+            } else {
+                System.out.println("Kvadratas nera magiskas");
+            }
+        }
+
+    }
+}
+
+
+
+
+
+public class masyvai {
+    public static int[] add(int[] m, int data) {
+        int[] t= new int[m.length+1];
+        for (int i=0; i<m.length; i++) {
+            t[i]=m[i];
+        }
+        t[t.length-1]=data;
+        return t;
+    }
+    public static int[] del(int[] m,int index) {
+            int[] t = new int [m.length-1];
+            return t;
+    }
+    public static void main (string[] args) {
+        int [] m = {3,7};
+        system.out,println (arrays.to string(m));
+    }
+}
+
+istrinti prideti
+
+public class masyvai {
+    public static int[] add(int[] m, int data) {
+        int[] t= new int[m.length+1];
+        for (int i=0; i<m.length; i++) {
+            t[i]=m[i];
+        }
+        t[t.length-1]=data;
+        return t;
+    }
+    public static int[] del(int[] m,int index) {
+            int[] t = new int [m.length-1];
+            t[i]=m[i];
+    }
+
+
+for (int i=index; i<t.length; i++)
+t [i] = m[i+1];
+}
+return t;
+    public static void main (string[] args) {
+        int [] m = {3,7};
+        system.out,println (arrays.to string(m));
+    }
+}
+
+
+public static int[] add(int[] m,int data) {
+int[] t = new int [m.length+1];
+for (int i=0; i<m.length; i++) {
+t[i]=m[i];
+}
+t[t.length-1] = data;
+return t;
+}
+
+public static int[] del(int[] m, int index) {
+int [] t = new int[m.length-1];
+for (int i=0; i<index;i++) {
+t[i]=m[i];
+}
+for (int i=index; i<t.length; i++) {
+t[i] = m[i+1];
+}
+
+return t;
+}
+
+
+
+public static void main(String[] args) {
+int [] m = {3,7};
+
+System.out.println(Arrays.toString(m));
+m = add(m,8);
+m = add(m,7);
+m = del(m,2);
+System.out.println(Arrays.toString(m));
+}
+
+
+
 }
 
 
