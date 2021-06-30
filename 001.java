@@ -590,36 +590,11 @@ public class UzduotisN {
     }
 }
 
+
+
+
+
 */
 /*
-import java.util.Scanner;
-public class Vykdymas {
-    public static void main(String[] args) {
-        Scanner in=new Scanner(System.in);
-        System.out.print("Iveskite kokia daugybos lentele norite gauti:");
-        int n=in.nextInt();
-        for (int i=1; i<20; i++){
-//           System.out.println(n+" */t " +i+" \t= "+(n*i));
-//        }
-//    }
-// }
 
-
-/*
-// import java.util.Scanner;
-// public class Vykdymas {
-//    public static void main(String[] args) {
-//        for (int i = 0; i < 10; i++) {
-//            for (int y=0; y<10; y++) {
-///                if (i==4 || i==5 || i==y || i==9-y) {
- //              System.out.print(" "); 
-//            }else {
-//                System.out.print("*");
-//            }
-//        }
-//        System.out.println();
-//    }
-//    in.close();
-// }
-//
 */
