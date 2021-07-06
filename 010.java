@@ -151,8 +151,138 @@ public class Trupmena {
 /// source - generate constructor using fields
 
 
+/////////////////////// task 2 
+
+vykdymas.java
+
+package Gyvunai;
+public class Vykdymas {
+    public static void main(String[] args) {
+
+        final int z=50;
+        /z++;
+        System.out.println(z);
+
+        Gyvunas g1=new Gyvunas("Brius", "Suo", "Naminukas");
+        Gyvunas g2=new Gyvunas("Lese", "Suo", "Koli");
+        Gyvunas g3=new Suo("Dingas", "Suo", "Laukinis skalisas");
+        Gyvunas g4=new Gyvunas("Barnis", "Ziurkenas");
+        Kate g5=new Kate("Murklys", "Kate", "Trumpaplauke");
+        Gyvunas g6=new Kate("Rainis", "Kate", "Siamo");  
+
+        g1.suzymeti(3);
+        g2.suzymeti(4);
+        g3.suzymeti(15);
+        g4.suzymeti(8);
+        g5.suzymeti(17);
 
 
+        System.out.println(g1);
+        System.out.println(g2);
+        System.out.println(g3);
+        System.out.println(g4);
+        System.out.println(g5);
+
+        final int i=5;
+        final Gyvunas g=new Gyvunas("Barnis", "Ziurkenas");
+
+        i=8;
+        g.vardas="Bernis";
+        g=new Gyvunas("", "");
+        g=g4;
+    }
+}
+
+kate.java
+
+
+
+suo.java
+
+package Gyvunai;
+public class Suo extends Gyvunas {
+    public String veisle;
+    public Suo(String vardas, String tipas) {
+
+        super(vardas, tipas);
+    }
+    public Suo(String vardas, String tipas, String veisle) {
+        super(vardas,tipas);
+        this.veisle = veisle;
+    }
+
+    @Override
+    public String toString() {
+        return vardas +"," + tipas + " id="+ id+ "[veise: "+this.veisle+"]";
+    }
+
+        this.tipas=tipas;
+        this.vardas=vardas;
+    }
+}
+
+
+
+
+
+gyvunai.java
+
+package Gyvunai;
+public class Gyvunas {
+    public string vardas;
+    public string tipas;
+    protected string id;
+
+    public final amzius=12;
+
+    public Gyvunas() {
+        amzius=5;
+    }
+
+    public Gyvunas(String vardas, String tipas) {
+        this.vardas = vardas;
+        this.tipas = tipas;
+    }
+    public void suzymeti(int id) {
+        this.id="G -" + id;
+    }
+}
+
+public String getVardas() {
+    return vardas;
+}
+
+public void setVardas(String vardas) {
+    this.vardas = vardas;
+}
+
+public String getTipas() {
+    return tipas;
+}
+
+public void setTipas(String tipas) {
+    this.tipas = tipas;
+}
+
+
+public String getId() {
+    return Id;
+}
+
+public void setId(String id) {
+    this.Id = Id;
+}
+
+@Override {
+    public void suzymeti (int id) {
+        this.id="K -"+id;
+    }
+}
+
+@Override
+public String toString() {
+    return "Gyvunas [vardas= " + vardas + ", tipas=" + tipas +", id=" + id + "]";
+}
 
 
 
